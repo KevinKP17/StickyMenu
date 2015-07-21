@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Offset Menu</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="keywords" content="jplugins, jquery, javascript, sticky-menu, github , tutorial">
+    <meta name="description" content="A lightweight and simple jQuery sticky menu with animation. it's simple and easy to customize">
+
+    <meta property="og:title" content="StickyMenu JS"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="A lightweight, flexible, and fast jQuery plugins for fixed sticky menu"/>
+    <meta property="og:site_name" content="Sticky.Websprout"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="nama link">
+    <meta name="twitter:title" content="StickyMenu JS">
+    <meta name="twitter:description" content="A lightweight, flexible, and fast jQuery plugins for fixed sticky menu">
+    <meta name="twitter:image" content="nama link">
+
+
+</head>
+<body>
+
+<section class="offset-menu">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</section>
+
+<section class="offset-menu-2">
+    <ul>
+        <li>item2 </li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+</section>
+
+<section id="section1" class="body">
+    <div class="container">
+        <h1>STICKY MENU JS</h1>
+        <h2>The simplest sticky menu ever</h2>
+        <div class="btn-container">
+            <div class="visit act-btn">
+
+            </div>
+        </div>
+    </div>
+    <!--<div class="pull btn">Click me</div>-->
+</section>
+<section id="section2" class="paragraph">
+    <div class="container">
+        <h2>What is this ?</h2>
+        <p>
+            it's a simple plugin that create your head-menu looks <b>Sticky</b> and <b>amazing</b>.
+            it's lightweight and the animation are based on CSS3 without any additional CSS to add.
+        </p>
+        <p><b>Javascript</b></p>
+        <code>
+            $(<span class="str">".offset-menu"</span>).<span class="var">stickyMenu</span>({
+                <span class="obj">scrollAnchor</span>: <span class="str">".paragraph"</span>
+            })<span class="var">;</span>
+        </code>
+        <h2>Options</h2>
+        <p>
+           right now the stickymenu has several options to work with.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Default value</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>scroll</td>
+                    <td>true</td>
+                    <td>Trigger the menu animation on scroll</td>
+                </tr>
+                <tr>
+                    <td>toggle</td>
+                    <td>false</td>
+                    <td>Trigger the menanimation on toggle or click</td>
+                </tr>
+                <tr>
+                   <td>reverse</td>
+                   <td>false</td>
+                   <td>the hide/show menu animation are reverse</td>
+                </tr>
+                <tr>
+                    <td>anchor</td>
+                    <td>100</td>
+                    <td>Trigger the menu animation after window position reached the value. <br/>you can
+                        use selector as the anchor ( it will get the top offset position of the <br/> selected anchor )
+                        <br/>ex : <b style="color: #1976D2">".paragraph"</b></td>
+                </tr>
+                <tr>
+                    <td>speed</td>
+                    <td>300 (in ms)</td>
+                    <td>menu animation speed</td>
+                </tr>
+                <tr>
+                    <td>toggleBtn</td>
+                    <td style="color:#1976D2">".pull"</td>
+                    <td>contain selector to apply toggle</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>How to Customize</h2>
+        <p>
+            The core of the main animations are the CSS 3. you can customize your animation by override the selector class/id.
+        </p>
+        <p><b>SCSS</b></p>
+        <code>
+            .<span class="css">offset-menu-2</span>{ <br/>
+            <i style="margin-left: 1em;"></i><span class="var">ul</span>{ <br/>
+            <i style="margin-left: 2em;"></i><span class="obj">width</span>: <span class="attr">25%</span>; <br/>
+            <i style="margin-left: 2em;"></i>}
+            <br/><br/>
+            <i style="margin-left: 1em;"></i>&.<span class="css">active</span>{ <br/>
+            <i style="margin-left: 2em;"></i><span class="car">ul</span>{ <br/>
+            <i style="margin-left: 3em;"></i><span class="obj">width</span>: <span class="attr">100%</span>; <br/>
+            <i style="margin-left: 3em;"></i><span class="obj">transition-delay</span>: <span class="attr">500ms</span>; <br/>
+            <i style="margin-left: 2em;"></i>} <br/>
+            <i style="margin-left: 1em;"></i>} <br/>
+            } <br/>
+        </code>
+
+        <div class="social">
+            <span class='st_facebook_large' displayText='Facebook'></span>
+            <span class='st_googleplus_large' displayText='Google +'></span>
+            <span class='st_twitter_large' displayText='Tweet'></span>
+            <span class='st_linkedin_large' displayText='LinkedIn'></span>
+            <span class='st_pinterest_large' displayText='Pinterest'></span>
+            <div class="copyright">
+                &copy; KevinKP 2015
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<script src="js/add/jquery.js"></script>
+<script src="js/stickymenu.js"></script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "3be3270d-482b-4139-bb68-8b71bc95994b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+
+    $('.offset-menu').stickyMenu({
+        anchor: 0
+    });
+
+    $('.offset-menu-2').stickyMenu({
+        anchor: ".paragraph",
+        reverse:true
+    });
+</script>
+</body>
+</html>

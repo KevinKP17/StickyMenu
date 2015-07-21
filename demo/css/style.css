@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+section[class*="offset-menu"] {
+  width: 100%;
+  background-color: #1976D2; }
+  section[class*="offset-menu"] ul {
+    display: table;
+    padding: 0; }
+    section[class*="offset-menu"] ul li {
+      display: table-cell;
+      color: white;
+      padding: 20px 15px;
+      font-size: 18px; }
+
+h2 {
+  padding-top: 30px;
+  font-size: 2em;
+  color: #2196F3; }
+
+.body {
+  width: 100%;
+  height: 70%;
+  background-color: #2196F3;
+  text-align: center;
+  color: white; }
+  .body h1 {
+    padding-top: 150px;
+    font-size: 4.5em; }
+  .body h2 {
+    padding-top: 15px;
+    font-size: 2em; }
+  .body .btn {
+    width: 150px;
+    height: auto;
+    padding: 1em;
+    background-color: #1976D2;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 30%; }
+  .body .btn-container {
+    width: 50%;
+    margin: 30px auto; }
+  .body .act-btn {
+    border: 1px solid white;
+    padding: 15px;
+    cursor: pointer; }
+  .body .visit {
+    position: relative;
+    width: 200px;
+    height: 22px;
+    margin: auto; }
+    .body .visit:before {
+      content: "";
+      position: absolute;
+      padding: 5px;
+      display: block;
+      width: 100%;
+      height: 0;
+      opacity: 0;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      box-sizing: border-box;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease; }
+    .body .visit:after {
+      content: "Visit us on Github";
+      position: absolute;
+      z-index: 3;
+      display: block;
+      color: white;
+      margin-left: 35px;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease; }
+    .body .visit:hover:before {
+      height: 100%;
+      opacity: 1; }
+    .body .visit:hover:after {
+      color: #2196F3; }
+
+.offset-menu-2 {
+  background-color: #2196F3 !important; }
+
+.paragraph {
+  padding: 30px; }
+  .paragraph .container {
+    width: 75%;
+    margin: auto; }
+    .paragraph .container p {
+      text-align: justify;
+      margin-bottom: 15px; }
+
+code {
+  padding: 15px 40px;
+  margin-bottom: 10px;
+  background-color: #2b2b2b;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  font-family: "PT Mono",serif; }
+  code .var {
+    color: #cc7832; }
+  code .css {
+    color: #ffc66d; }
+  code .obj {
+    color: #9876aa; }
+  code .cmt {
+    color: #808080; }
+  code .str {
+    color: #69864a; }
+
+table {
+  width: 100%;
+  padding: 10px 0; }
+  table thead {
+    color: #1976D2;
+    font-weight: 700; }
+  table td {
+    padding: 10px 20px;
+    vertical-align: top; }
+
+.social {
+  padding-top: 15px;
+  margin: auto;
+  text-align: center; }
+
+.offset-menu-2 ul {
+  width: 25%; }
+.offset-menu-2.active ul {
+  width: 100%;
+  transition-delay: 500ms; }
+
+table {
+  background-color: rgba(165, 163, 164, 0.32); }
+
+/*# sourceMappingURL=style.css.map */
